@@ -138,22 +138,22 @@
                                 <!-- .link-boxes -->
                                 <figure>
                                     <a href="about.html"><img src="{{ asset('ladun/') }}/images/site/box-01.jpg" alt="About Me"></a>
-                                    <figcaption class="wp-caption-text">About Me</figcaption>
+                                    <figcaption class="wp-caption-text">Front End</figcaption>
                                 </figure>
 
                                 <figure>
                                     <a href="about.html"><img src="{{ asset('ladun/') }}/images/site/box-02.jpg" alt="About Me"></a>
-                                    <figcaption class="wp-caption-text">Life</figcaption>
+                                    <figcaption class="wp-caption-text">UI/UX</figcaption>
                                 </figure>
 
                                 <figure>
                                     <a href="about.html"><img src="{{ asset('ladun/') }}/images/site/box-03.jpg" alt="About Me"></a>
-                                    <figcaption class="wp-caption-text">Travel</figcaption>
+                                    <figcaption class="wp-caption-text">Data Science</figcaption>
                                 </figure>
 
                                 <figure>
-                                    <a href="https://www.instagram.com/pixelwarsdesign/"><img src="{{ asset('ladun/') }}/images/site/box-04.jpg" alt="About Me"></a>
-                                    <figcaption class="wp-caption-text">Follow On Instagram</figcaption>
+                                    <a href="https://twitter.com/nadha_alditha"><img src="{{ asset('ladun/') }}/images/site/box-04.jpg" alt="About Me"></a>
+                                    <figcaption class="wp-caption-text">Follow On Twitter</figcaption>
                                 </figure>
                                 <!-- .link-boxes -->
 
@@ -170,154 +170,29 @@
 
 
                         <!-- .home-title -->
-                        <h3 class="widget-title home-title">MY PORTFOLIO</h3>
+                        <h3 class="widget-title home-title">MY PROJECT</h3>
 
 
                         <!-- BLOG SIMPLE -->
                         <div class="blog-simple">
-
+                            @foreach($project as $pr)
                             <!-- .hentry -->
                             <article class="hentry post has-post-thumbnail">
-
                                 <!-- .hentry-left -->
                                 <div class="hentry-left">
-                                    <div class="entry-date">
-                                        <span class="day">17</span>
-                                        <span class="month">May</span>
-                                        <span class="year">2015</span>
-                                    </div>
                                     <div class="featured-image" style="background-image:url('{{ asset('ladun/') }}/images/blog/08.jpg')"></div>
                                 </div>
                                 <!-- .hentry-left -->
-
                                 <!-- .hentry-middle -->
                                 <div class="hentry-middle">
-
                                     <!-- .entry-title -->
-                                    <h2 class="entry-title"><a href="#!">SIM Ganesha</a></h2>
-
+                                    <h2 class="entry-title"><a href="#!">{{ $pr -> title }}</a></h2>
+                                    <small>{{ $pr -> sub_title }}</small>
                                 </div>
                                 <!-- .hentry-middle -->
-
-                                
-
                             </article>
                             <!-- .hentry -->
-
-                            <!-- .hentry -->
-                            <article class="hentry post has-post-thumbnail">
-
-                                <!-- .hentry-left -->
-                                <div class="hentry-left">
-                                    <div class="entry-date">
-                                        <span class="day">03</span>
-                                        <span class="month">Apr</span>
-                                        <span class="year">2015</span>
-                                    </div>
-                                    <div class="featured-image" style="background-image:url('{{ asset('ladun/') }}/images/blog/08.jpg')"></div>
-                                </div>
-                                <!-- .hentry-left -->
-
-                                <!-- .hentry-middle -->
-                                <div class="hentry-middle">
-
-                                    <!-- .entry-title -->
-                                    <h2 class="entry-title"><a href="blog-single.html">Notes On Life</a></h2>
-
-                                </div>
-                                <!-- .hentry-middle -->
-
-                                <a class="post-link" href="blog-single.html">Notes On Life</a>
-
-                            </article>
-                            <!-- .hentry -->
-
-                            <!-- .hentry -->
-                            <article class="hentry post has-post-thumbnail">
-
-                                <!-- .hentry-left -->
-                                <div class="hentry-left">
-                                    <div class="entry-date">
-                                        <span class="day">09</span>
-                                        <span class="month">Jan</span>
-                                        <span class="year">2015</span>
-                                    </div>
-                                    <div class="featured-image" style="background-image:url('{{ asset('ladun/') }}/images/blog/08.jpg')"></div>
-                                </div>
-                                <!-- .hentry-left -->
-
-                                <!-- .hentry-middle -->
-                                <div class="hentry-middle">
-
-                                    <!-- .entry-title -->
-                                    <h2 class="entry-title"><a href="blog-single.html">Minimalist Living Tips</a></h2>
-
-                                </div>
-                                <!-- .hentry-middle -->
-
-                                <a class="post-link" href="blog-single.html">Minimalist Living Tips</a>
-
-
-                            </article>
-                            <!-- .hentry -->
-
-                            <!-- .hentry -->
-                            <article class="hentry post has-post-thumbnail">
-
-                                <!-- .hentry-left -->
-                                <div class="hentry-left">
-                                    <div class="entry-date">
-                                        <span class="day">14</span>
-                                        <span class="month">Jun</span>
-                                        <span class="year">2015</span>
-                                    </div>
-                                    <div class="featured-image" style="background-image:url('{{ asset('ladun/') }}/images/blog/09.jpg')"></div>
-                                </div>
-                                <!-- .hentry-left -->
-
-                                <!-- .hentry-middle -->
-                                <div class="hentry-middle">
-
-                                    <!-- .entry-title -->
-                                    <h2 class="entry-title"><a href="blog-single.html">History of The Beloved Machine</a></h2>
-
-                                </div>
-                                <!-- .hentry-middle -->
-
-                                <a class="post-link" href="blog-single.html">History of The Beloved Machine</a>
-
-
-                            </article>
-                            <!-- .hentry -->
-
-                            <!-- .hentry -->
-                            <article class="hentry post has-post-thumbnail">
-
-                                <!-- .hentry-left -->
-                                <div class="hentry-left">
-                                    <div class="entry-date">
-                                        <span class="day">25</span>
-                                        <span class="month">Agu</span>
-                                        <span class="year">2015</span>
-                                    </div>
-                                    <div class="featured-image" style="background-image:url('{{ asset('ladun/') }}/images/blog/10.jpg')"></div>
-                                </div>
-                                <!-- .hentry-left -->
-
-                                <!-- .hentry-middle -->
-                                <div class="hentry-middle">
-
-                                    <!-- .entry-title -->
-                                    <h2 class="entry-title"><a href="blog-single.html">Mastering Photography</a></h2>
-
-                                </div>
-                                <!-- .hentry-middle -->
-
-                                <a class="post-link" href="blog-single.html">Mastering Photography</a>
-
-
-                            </article>
-                            <!-- .hentry -->
+                            @endforeach
 
                         </div>
                         <!-- BLOG SIMPLE -->
@@ -326,7 +201,7 @@
 
                         <!-- .home-launch -->
                         <div class="home-launch">
-                            <a class="button" href="blog-irregular.html">See All Posts</a>
+                            <a class="button" href="blog-irregular.html">See All Work</a>
                         </div>
                         <!-- .home-launch -->
 
@@ -388,7 +263,7 @@
 
                     <div class="textwidget">
                         <a class="social-link facebook" href="#"></a>
-                        <a class="social-link twitter" href="#"></a>
+                        <a class="social-link twitter" href="https://twitter.com/nadha_alditha"></a>
                         <a class="social-link vine" href="#"></a>
                         <a class="social-link dribbble" href="#"></a>
                         <a class="social-link instagram" href="#"></a>
@@ -412,7 +287,7 @@
                 <!-- layout-medium -->
                 <div class="layout-medium">
 
-                    <div class="textwidget">crafted with <i class="pw-icon-heart"></i> <em>by</em> Pixelwars</div>
+                    <div class="textwidget">Crafted with <i class="pw-icon-heart"></i> <em>by</em> Me</div>
 
                 </div>
                 <!-- layout-medium -->
